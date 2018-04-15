@@ -2,6 +2,11 @@ package test;
 
 import junit.framework.TestCase;
 import org.junit.Before;
+import org.junit.Test;
+
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertNotNull;
+import static junit.framework.TestCase.assertTrue;
 
 //Import attackers
 import Tarea1.Knight;
@@ -11,10 +16,6 @@ import Tarea1.Goblin;
 import Tarea1.IceGolem;
 import Tarea1.Undead;
 
-import org.junit.Test;
-import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertNotNull;
-import static junit.framework.TestCase.assertTrue;
 
 
 public class GoblinTest {

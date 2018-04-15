@@ -11,10 +11,6 @@ import Tarea1.Goblin;
 import Tarea1.IceGolem;
 import Tarea1.Undead;
 
-
-//Import attackables
-import Tarea1.FruitTree;
-import Tarea1.Rock;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;

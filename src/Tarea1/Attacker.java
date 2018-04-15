@@ -8,8 +8,38 @@ getMaxHP() that are used to know the values of different variables of the classe
  */
 public interface Attacker extends Attackable {
     void attack(Attackable attackable);
+    /*
+    @description Method used to attack other Attackable. Because we are using double dispatch, this method triggers
+    the call of another method named attackedByXXXXX where XXXXX is the type of the attacker.
+
+    -When one attacker attacks another, the damage dealt depends on the types of both participants of the fight.
+    -When humans attack a rock, they lose some hit points.
+    -When humans or goblins attack a fruit tree, they recover some hit points.
+
+    @param Attackable attackable
+    */
+
     double getHP();
+    /*
+    @description returns hitPoints
+    @return double hitPoints
+    */
+
     double getAP();
+    /*
+    @description returns attackPoints
+    @return double attackPoints
+    */
+
     Boolean isAlive();
+    /*
+    @description returns true if object is alive, false if it isn't
+    @return Boolean alive
+    */
+
     double getMaxHP();
+    /*
+    @description returns maxHitPoints
+    @return double masHitPoints
+    */
 }
